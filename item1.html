@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Мото</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/shop-homepage.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+    
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                     <a class="navbar-brand" style="margin-top:-10px;" href="index.html"><img alt="Brand" src="#"></a>
+
+                <a class="navbar-brand" href="index.html">Начало</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="about.html">За нас</a>
+                    </li>
+                    <li>
+                        <a href="#">Услуги</a>
+                    </li>
+                    <li>
+                        <a href="contacts.html">Контакти</a>
+                    </li>
+                </ul>
+                <div class="col-sm-3 col-md-3">
+                    <form class="navbar-form" role="search">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Търси" name="q">
+                        <div class="input-group-btn">
+                            <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                        </div>
+                    </div>
+                    </form>
+                </div>
+                <ul class="nav navbar-nav navbar-default navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> <span class="glyphicon glyphicon-shopping-cart"></span> Количка<span class="caret"></span></a>
+                        <ul class="dropdown-menu dropdown-cart" role="menu">
+                            <li>
+                                <span class="item">
+                                    <span class="item-left">
+                                        <img src="img/1_t.png" alt="" />
+                                        <span class="item-info">
+                                            <span>Item name</span>
+                                            <span>23$</span>
+                                        </span>
+                                        </span>
+                                        <span class="item-right">
+                                        <button class="btn btn-xs btn-danger pull-right">x</button>
+                                        </span>
+                                    </span>
+                                </span>
+                              </li>
+                            <li>
+                                <span class="item">
+                                    <span class="item-left">
+                                        <img src="img/2_t.png" alt="" />
+                                        <span class="item-info">
+                                            <span>Item name</span>
+                                            <span>23$</span>
+                                        </span>
+                                    </span>
+                                    <span class="item-right">
+                                        <button class="btn btn-xs btn-danger pull-right">x</button>
+                                    </span>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="item">
+                                    <span class="item-left">
+                                        <img src="img/3_t.png" alt="" />
+                                        <span class="item-info">
+                                            <span>Item name</span>
+                                            <span>23$</span>
+                                        </span>
+                                    </span>
+                                    <span class="item-right">
+                                        <button class="btn btn-xs btn-danger pull-right">x</button>
+                                    </span>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="item">
+                                    <span class="item-left">
+                                        <img src="img/4_t.png" alt="" />
+                                        <span class="item-info">
+                                            <span>Item name</span>
+                                            <span>23$</span>
+                                        </span>
+                                    </span>
+                                    <span class="item-right">
+                                        <button class="btn btn-xs btn-danger pull-right">x</button>
+                                    </span>
+                                </span>
+                            </li>
+                            <li class="divider"></li>
+                            <li><a class="text-center" href="shopcart.html"><button type="button" class="col-md-12 btn btn-success">Купи</button></a></li>
+                        </ul>
+                    </li>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                                 {{ Auth::user()->name }} <span class="caret"></span>
+                            </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#"><i class="fa fa-briefcase"></i> Моите поръчки</a></li>
+                            <li><a href="{{ url('/logout') }}"><i class="fa fa-btn fa-sign-out"></i> Изход</a></li>
+                        </ul>
+                        </li>
+                    </ul>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+            <div class="col-md-3">
+                <p class="lead">Продукти</p>
+                <div class="dropdown">
+                    <a href="#" class="list-group-item" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Масла <i class="fa fa-fw fa-caret-down"></i><span class="caret"></span></a>
+                        <ul id="demo" class="collapse">
+                            <a href="#" class="list-group-item" data-toggle="collapse" data-target="#demo1"><i class="fa fa-fw fa-arrows-v"></i> Repsol <i class="fa fa-fw fa-caret-down"></i><span class="caret"></span></a>
+                        <ul id="demo1" class="collapse">
+                            <a href="productlist.html" class="list-group-item">Moto</a>
+                            <a href="productlist.html" class="list-group-item">Racing</a>
+                        </ul>
+                            <a href="#" class="list-group-item">Castrol</a>
+                        </ul>
+                
+                    <a href="#" class="list-group-item" data-toggle="collapse" data-target="#demo2"><i class="fa fa-fw fa-arrows-v"></i> Филтри <i class="fa fa-fw fa-caret-down"></i><span class="caret"></span></a>
+                        <ul id="demo2" class="collapse">
+                            <a href="#" class="list-group-item">Moto</a>
+                            <a href="#" class="list-group-item">Racing</a>
+                        </ul>
+                
+                    <a href="#" class="list-group-item" data-toggle="collapse" data-target="#demo3"><i class="fa fa-fw fa-arrows-v"></i> Акумулатори <i class="fa fa-fw fa-caret-down"></i><span class="caret"></span></a>
+                        <ul id="demo3" class="collapse">
+                            <a href="#" class="list-group-item">FULBAT</a>
+                            <a href="#" class="list-group-item">Racing</a>
+                        </ul>
+                
+                    <a href="#" class="list-group-item" data-toggle="collapse" data-target="#demo4"><i class="fa fa-fw fa-arrows-v"></i> Свещи <i class="fa fa-fw fa-caret-down"></i><span class="caret"></span></a>
+                        <ul id="demo4" class="collapse">
+                            <a href="#" class="list-group-item">Moto</a>
+                            <a href="#" class="list-group-item">Racing</a>
+                        </ul>
+                </div>
+            </div>
+
+            <div class="col-md-9">
+
+                <div class="thumbnail">
+                    <div class="row carousel-holder">
+
+                    <div class="col-md-12">
+                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <img class="slide-image" src="img/1_b.png" alt="">
+                                </div>
+                                <div class="item">
+                                    <img class="slide-image" src="http://placehold.it/800x300" alt="">
+                                </div>
+                                <div class="item">
+                                    <img class="slide-image" src="http://placehold.it/800x300" alt="">
+                                </div>
+                            </div>
+                            <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                            </a>
+                            <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                    <div class="caption-full">
+                        <div class="row">
+                            <div class="col-sm-8">
+                                <h4>4T Scooter 5W40</h4>
+                            </div>
+                            <div class="col-sm-4">
+                                <h4 class="pull-right">$24.99</h4>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <a href="item1.html" class="btn btn-success pull-right">Купи</a>
+                            </div>
+                        </div>
+
+                        <p>Полусинтетично масло, специално разработено от Repsol за 4-тактови двигатели на скутери. Неговите характеристики осигуряват отлична защита на двигателя и се запазват в широки температурни граници при различни условия на експлоатация. Препоръчва се за типичния при градско движение „стоп-старт” режим или високите ускорения от средна скорост.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- /.container -->
+
+    <div class="container">
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+
+            <div class="container">
+                <div class="row">
+                        <div class="col-xs-3">
+                            <ul class="list-unstyled">
+                                <li><strong>Меню</strong><li>
+                                <li><a href="index.html">Начало</a></li>
+                                <li><a href="productlist.html">Масла</a></li>
+                                <li><a href="productlist.html">Филтри</a></li>
+                                <li><a href="productlist.html">Акумулатори</a></li>
+                                <li><a href="productlist.html">Свещи</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-3">
+                            <ul class="list-unstyled">
+                                <li><strong>Полезно</strong><li>
+                                <li><a href="about.html">За нас</a></li>
+                                <li><a href="contacts.html">Контакти</a></li>
+                                <li><a href="#">Условия за ползване</a></li>
+                                <li><a href="#">Поръчка и доставка</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-3">
+                            <ul class="list-unstyled">
+                                <li><strong>За връзка с нас</strong><li>
+                                <li><i class="glyphicon glyphicon-flag"></i> № ул."" </li>
+                                <li class="addres">гр.София, България</li>
+                                <li><i class="glyphicon glyphicon-phone">02/000 00 00, 0888/888 888</i></a></li>
+                                <li class="email"><i class="glyphicon glyphicon-envelope"></i> email <a href="mailto:tech-co@tech-co.net">mail@mail.net</a></li>
+                                
+                            </ul>
+                        </div>
+                        <div class="col-xs-3">
+                            <ul class="list-unstyled">
+                                <li><strong>Работно време:</strong><li>
+                                <li><p>Понеделник - Петък - 08:30 - 18:30 ч.</p> 
+                                                <p>Събота - 09:00 - 17:00 ч.</p> 
+                                                <p>Неделя - Почивен ден</p>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                </div>
+                <hr>
+                
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="text-center">Copyright &copy; "" 2016</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

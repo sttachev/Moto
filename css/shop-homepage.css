@@ -1,0 +1,244 @@
+
+
+body {
+    padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+
+.carousel-inner-homepage, .carousel-holder-homepage {
+  
+    height: 250px;
+}
+.slide-image {
+    width: 100%;
+
+}
+
+#myCarousel {
+    margin-left: -15px;
+}
+
+#slider-thumbs {
+    margin-left: -30px;
+}
+
+.carousel-holder {
+    
+    margin-bottom: 30px;
+}
+
+.carousel-control,
+.item {
+    border-radius: 4px;
+}
+
+
+
+.caption {
+    height: 170px;
+    overflow: hidden;
+
+}
+
+.caption h4 {
+    white-space: nowrap;
+}
+
+.thumbnail img {
+    width: 100%;
+}
+
+.ratings {
+    padding-right: 10px;
+    padding-left: 10px;
+    color: #d17581;
+}
+
+.thumbnail .tumbnail-item-pp{
+    padding: 0;
+
+}
+
+.tumbnail-item-pp{
+    padding: 4px;
+}
+
+.thumbnail-product {
+    height: 70px;
+}
+
+
+.thumbnail .caption-full {
+    padding: 9px;
+    color: #333;
+}
+
+
+
+footer {
+    margin: 50px 0;
+}
+
+ul.dropdown-cart{
+    min-width:250px;
+}
+ul.dropdown-cart li .item{
+    display:block;
+    padding:3px 10px;
+    margin: 3px 0;
+}
+ul.dropdown-cart li .item:hover{
+    background-color:#f3f3f3;
+}
+ul.dropdown-cart li .item:after{
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+ul.dropdown-cart li .item-left{
+    float:left;
+}
+ul.dropdown-cart li .item-left img,
+ul.dropdown-cart li .item-left span.item-info{
+    float:left;
+}
+ul.dropdown-cart li .item-left span.item-info{
+    margin-left:10px;   
+}
+ul.dropdown-cart li .item-left span.item-info span{
+    display:block;
+}
+ul.dropdown-cart li .item-right{
+    float:right;
+}
+ul.dropdown-cart li .item-right button{
+    margin-top:14px;
+}
+
+.media-body {
+    padding: 10px;
+}
+
+.h3, h3 {
+    font-size: 23px;
+}
+
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: middle;
+    border-top: 1px solid #ddd;
+}
+
+.media-left, .media>.pull-left {
+    padding-right: 0px;
+}
+
+
+.stylish-input-group .input-group-addon{
+    background: white !important; 
+}
+.stylish-input-group .form-control{
+    border-right:0; 
+    box-shadow:0 0 0; 
+    border-color:#ccc;
+}
+.stylish-input-group button{
+    border:0;
+    background:transparent;
+}
+
+#imaginary_container {
+    margin-bottom: 50px;
+}
+
+
+
+.addres {
+    padding: 0 0 0 20px;
+}
+
+.hide-bullets {
+    list-style:none;
+    margin-left: -40px;
+    margin-top:20px;
+}
+
+.text-order {
+    text-align: center;
+}
+
+.table>tbody>tr>td, .table>tfoot>tr>td{
+    vertical-align: middle;
+}
+@media screen and (max-width: 600px) {
+    table#cart tbody td .form-control{
+        width:20%;
+        display: inline !important;
+    }
+    .actions .btn{
+        width:36%;
+        margin:1.5em 0;
+    }
+    
+    .actions .btn-info{
+        float:left;
+    }
+    .actions .btn-danger{
+        float:right;
+    }
+    
+    table#cart thead { display: none; }
+    table#cart tbody td { display: block; padding: .6rem; min-width:320px;}
+    table#cart tbody tr td:first-child { background: #fff; color: #333; }
+    table#cart tbody td:before {
+        content: attr(data-th); font-weight: bold;
+        display: inline-block; width: 8rem;
+    }
+
+  
+    table#cart tfoot td{display:block; }
+    table#cart tfoot td .btn{display:block;}
+    
+}
+
+.cont-form {
+    padding: 20px 20px;
+    margin-left: -20px;
+
+}
+
+.btn-msg {
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.input-group-addon.primary {
+    color: rgb(255, 255, 255);
+    background-color: rgb(50, 118, 177);
+    border-color: rgb(40, 94, 142);
+}
+.input-group-addon.success {
+    color: rgb(255, 255, 255);
+    background-color: rgb(92, 184, 92);
+    border-color: rgb(76, 174, 76);
+}
+.input-group-addon.info {
+    color: rgb(255, 255, 255);
+    background-color: rgb(57, 179, 215);
+    border-color: rgb(38, 154, 188);
+}
+.input-group-addon.warning {
+    color: rgb(255, 255, 255);
+    background-color: rgb(240, 173, 78);
+    border-color: rgb(238, 162, 54);
+}
+.input-group-addon.danger {
+    color: rgb(255, 255, 255);
+    background-color: rgb(217, 83, 79);
+    border-color: rgb(212, 63, 58);
+}
